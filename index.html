@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진주 홍보 웹사이트</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">진주</a>
+        <!--  로고에는 하모 아이콘 넣을지 고민중. -->
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- 메인화면 -->
+    <section class="banner" id="home">
+      <div class="video-container">
+          <div class="overlay"></div>
+          <iframe class="video-bg" id="video-bg" 
+                src="https://www.youtube.com/embed/vRok4bfaKCc?enablejsapi=1&version=3&playerapiid=ytplayer&controls=0&showinfo=0&autoplay=1&loop=1&mute=1&playlist=vRok4bfaKCc" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+</iframe>
+      </div>
+      <div class="content">
+          <!-- <h1 class="text-reveal">Welcome to JINJU</h1> -->
+          <!-- <p>우리는 최고의 비디오 제작 경험을 제공합니다. 전문적인 서비스와 창의적인 아이디어로 당신의 이야기를 세상에 전합니다.</p> -->
+          <!-- <a href="#portfolio" class="btn">Our Work</a> -->
+          <a href="https://www.jinju.go.kr/main.web" target="_blank" class="btn text-reveal">진주 방문하기</a>
+      </div>
+  </section>
+
+  
+   <!-- 진주 간략 소개 -->
+    <!-- 이미지 랑 버튼 넣어서 .. -->
+    <section class="about" id="about">
+        <div class="section-content">
+            <h2 class="section-title">핫플</h2>
+            <p>우리는 10년 이상의 경험을 가진 전문 비디오 제작 팀입니다. 모든 프로젝트에 열정과 창의성을 담아 최고의 결과물을 만들어냅니다. 당신의 브랜드와 이야기를 가장 효과적으로 전달할 수 있는 방법을 항상 고민합니다.</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Our Mission</h3>
+                    <p>고객의 아이디어를 시각적으로 표현하고 감동을 전달하는 영상을 제작합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Our Vision</h3>
+                    <p>창의적인 시각과 최신 기술을 결합해 새로운 영상 경험을 만들어 냅니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Our Values</h3>
+                    <p>품질, 창의성, 정직함, 그리고 고객 만족을 가장 중요한 가치로 생각합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="services" id="services">
+        <div class="section-content">
+            <h2 class="section-title">Our Services</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Commercial Videos</h3>
+                    <p>브랜드 이미지를 높이고 제품을 효과적으로 홍보할 수 있는 상업 영상을 제작합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Music Videos</h3>
+                    <p>아티스트의 음악과 비전을 시각적으로 표현하는 창의적인 뮤직비디오를 만듭니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Documentary</h3>
+                    <p>진실된 이야기를 감동적으로 전달하는 다큐멘터리 영상을 제작합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Corporate Videos</h3>
+                    <p>기업의 가치와 메시지를 효과적으로 전달하는 기업 홍보 영상을 제작합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Event Coverage</h3>
+                    <p>특별한 순간을 영원히 기억할 수 있도록 이벤트를 촬영하고 편집합니다.</p>
+                </div>
+                <div class="col">
+                    <h3>Aerial Videography</h3>
+                    <p>드론을 활용한 항공 촬영으로 새로운 시각의 영상을 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="services" id="services">
+        <div class="section-content">
+            <h2 class="section-title">홍보영상</h2>
+            <div class="video-container">
+              <div class="overlay"></div>
+              <iframe class="video-bg" 
+                  src="https://www.youtube.com/embed/5_CHfuZNMdQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=5_CHfuZNMdQ&mute=1" 
+                  frameborder="0" 
+                  allowfullscreen
+                  ></iframe>
+          </div>
+        </div>
+    </section> -->
+    <div class="overlay"></div>
+    
+    <section class="video-section">
+        <div class="video-container">
+            <div id="player"></div>
+        </div>
+        <div class="welcome-text">환영합니다</div>
+        <div class="scroll-indicator">아래로 스크롤하세요 ↓</div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-box">
+            <h2>멋진 콘텐츠 제목</h2>
+            <p>
+                이곳은 주요 콘텐츠가 들어가는 부분입니다. 스크롤을 내려 이 부분에 도달하면, 
+                배경이 어두워지고 이 텍스트 박스가 부드럽게 나타납니다. 
+                YouTube 영상은 배경으로 계속 재생되지만, 오버레이가 적용되어 콘텐츠에 집중할 수 있습니다.
+            </p>
+            <p>
+                이 효과는 시각적으로 매력적인 웹 경험을 제공하며, 방문자들의 관심을 끌기에 좋습니다.
+                스크롤 기반 애니메이션은 현대적인 웹사이트 디자인의 중요한 요소입니다.
+            </p>
+            <p>
+                필요에 따라 이 텍스트와 스타일을 자유롭게 수정하세요. 
+                배경 영상, 색상, 애니메이션 속도 등을 조정하여 원하는 분위기를 만들 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+
+
+<!-- 밑에 스크롤을 내리면 계속 사라지는데......스크롤 때문인듯.? 고치기 -->
+    <section class="contact" id="contact">
+        <div class="section-content">
+            <h2 class="section-title">Contact Us</h2>
+            <p style="text-align: center; margin-bottom: 30px;">프로젝트에 대해 논의하거나 문의사항이 있으시면 언제든지 연락주세요.</p>
+            <div class="row" style="justify-content: center;">
+                <div class="col" style="text-align: center;">
+                    <h3>Email</h3>
+                    <p>contact@videography.com</p>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <h3>Phone</h3>
+                    <p>+82 10 1234 5678</p>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <h3>Address</h3>
+                    <p>서울특별시 강남구 테헤란로 123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
