@@ -1,168 +1,206 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>진주 홍보 웹사이트</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YB's Travel</title>
     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">진주</a>
-        <!--  로고에는 하모 아이콘 넣을지 고민중. -->
-        <ul class="navigation">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <a href="#" class="logo">YB's 맛집 World </a>
+      <ul class="navigation">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">vietnam</a></li>
+        <li><a href="#destinations">malaysia</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </header>
 
-    <!-- 메인화면 -->
-    <section class="banner" id="home">
+    <!-- 첫 번째 비디오 섹션 -->
+    <section id="home" class="video-section">
       <div class="video-container">
-          <div class="overlay"></div>
-          <iframe class="video-bg" id="video-bg" 
-                src="https://www.youtube.com/embed/vRok4bfaKCc?enablejsapi=1&version=3&playerapiid=ytplayer&controls=0&showinfo=0&autoplay=1&loop=1&mute=1&playlist=vRok4bfaKCc" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-</iframe>
+        <div id="player1" class="video-bg"></div>
+        <div class="video-overlay"></div>
       </div>
       <div class="content">
-          <!-- <h1 class="text-reveal">Welcome to JINJU</h1> -->
-          <!-- <p>우리는 최고의 비디오 제작 경험을 제공합니다. 전문적인 서비스와 창의적인 아이디어로 당신의 이야기를 세상에 전합니다.</p> -->
-          <!-- <a href="#portfolio" class="btn">Our Work</a> -->
-          <a href="https://www.jinju.go.kr/main.web" target="_blank" class="btn text-reveal">진주 방문하기</a>
+        <h1 class="delayed-fade-in viet-title">V I E T N A M</h1>
+        <p class="delayed-fade-in viet-content">
+          갓성비 맛집의 나라<br />
+          비교적 저렴한 가격으로 건강한 음식을 먹을 수 있는 곳
+        </p>
       </div>
-  </section>
-
-  
-   <!-- 진주 간략 소개 -->
-    <!-- 이미지 랑 버튼 넣어서 .. -->
-    <section class="about" id="about">
-        <div class="section-content">
-            <h2 class="section-title">핫플</h2>
-            <p>우리는 10년 이상의 경험을 가진 전문 비디오 제작 팀입니다. 모든 프로젝트에 열정과 창의성을 담아 최고의 결과물을 만들어냅니다. 당신의 브랜드와 이야기를 가장 효과적으로 전달할 수 있는 방법을 항상 고민합니다.</p>
-            <div class="row">
-                <div class="col">
-                    <h3>Our Mission</h3>
-                    <p>고객의 아이디어를 시각적으로 표현하고 감동을 전달하는 영상을 제작합니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Our Vision</h3>
-                    <p>창의적인 시각과 최신 기술을 결합해 새로운 영상 경험을 만들어 냅니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Our Values</h3>
-                    <p>품질, 창의성, 정직함, 그리고 고객 만족을 가장 중요한 가치로 생각합니다.</p>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- <section class="services" id="services">
-        <div class="section-content">
-            <h2 class="section-title">Our Services</h2>
-            <div class="row">
-                <div class="col">
-                    <h3>Commercial Videos</h3>
-                    <p>브랜드 이미지를 높이고 제품을 효과적으로 홍보할 수 있는 상업 영상을 제작합니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Music Videos</h3>
-                    <p>아티스트의 음악과 비전을 시각적으로 표현하는 창의적인 뮤직비디오를 만듭니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Documentary</h3>
-                    <p>진실된 이야기를 감동적으로 전달하는 다큐멘터리 영상을 제작합니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Corporate Videos</h3>
-                    <p>기업의 가치와 메시지를 효과적으로 전달하는 기업 홍보 영상을 제작합니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Event Coverage</h3>
-                    <p>특별한 순간을 영원히 기억할 수 있도록 이벤트를 촬영하고 편집합니다.</p>
-                </div>
-                <div class="col">
-                    <h3>Aerial Videography</h3>
-                    <p>드론을 활용한 항공 촬영으로 새로운 시각의 영상을 제공합니다.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="services" id="services">
-        <div class="section-content">
-            <h2 class="section-title">홍보영상</h2>
-            <div class="video-container">
-              <div class="overlay"></div>
-              <iframe class="video-bg" 
-                  src="https://www.youtube.com/embed/5_CHfuZNMdQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=5_CHfuZNMdQ&mute=1" 
-                  frameborder="0" 
-                  allowfullscreen
-                  ></iframe>
+    <!-- 소개 섹션 -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- 맛집 리스트 보여주는 곳 -->
+        <!-- 가격 표시하기 !!! 가성비 이니까.. -->
+        <div class="restaurant-list">
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1908635042945!2d108.33747681486548!3d15.913417584774628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420df93e8556b3%3A0x17e4a797f6c0dd99!2z7IaM7JuQ7L2U7LaU!5e0!3m2!1sko!2skr!4v1709986237068!5m2!1sko!2skr"
+          >
+            <h3>해산물요리 맛집</h3>
+            <p class="item-title">Soul Kitchen (2인 15000~20000원)</p>
+            <p>
+              베트남 호이안 안방비치의 <br />
+              해산물 요리 전문점&바다뷰 맛집
+            </p>
           </div>
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.9741440336786!2d108.32511768694313!3d15.875439289366977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420e7dc4d18e93%3A0x5230dfd24be2d6a2!2sNostalife!5e0!3m2!1sko!2skr!4v1709986339298!5m2!1sko!2skr"
+          >
+            <h3>벳남 음식 맛집</h3>
+            <p class="item-title">Nostalife (메뉴 1개 3~4000원)</p>
+            <p>
+              호이안 올드타운 안에 있는 쌀국수와 <br />
+              바삭한 반쎄오,완탄,모닝글로리 맛집!!
+            </p>
+          </div>
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2874.937391382999!2d108.32644734858529!3d15.878601115316563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420e7943de2173%3A0x4296bf40af5321a7!2z66eI64u07Lm4IC0g67CY66-47YC4!5e0!3m2!1sko!2skr!4v1741525859962!5m2!1sko!2skr"
+          >
+            <h3>반미 맛집</h3>
+            <p class="item-title">Madame kanh 반미퀸(반미 1개 1,100~1700원)</p>
+            <p>아침부터 미어터지는 현지 인기 반미집</p>
+          </div>
+          <!-- 여기에 더 많은 맛집 추가 가능 -->
         </div>
-    </section> -->
-    <div class="overlay"></div>
-    
-    <section class="video-section">
-        <div class="video-container">
-            <div id="player"></div>
+        <div class="about-image fade-in">
+          <!-- 구글맵 -->
+          <iframe
+            id="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1908635042945!2d108.33747681486548!3d15.913417584774628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420df93e8556b3%3A0x17e4a797f6c0dd99!2z7IaM7JuQ7L2U7LaU!5e0!3m2!1sko!2skr!4v1709986237068!5m2!1sko!2skr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="welcome-text">환영합니다</div>
-        <div class="scroll-indicator">아래로 스크롤하세요 ↓</div>
+      </div>
     </section>
 
-    <section class="content-section">
-        <div class="content-box">
-            <h2>멋진 콘텐츠 제목</h2>
-            <p>
-                이곳은 주요 콘텐츠가 들어가는 부분입니다. 스크롤을 내려 이 부분에 도달하면, 
-                배경이 어두워지고 이 텍스트 박스가 부드럽게 나타납니다. 
-                YouTube 영상은 배경으로 계속 재생되지만, 오버레이가 적용되어 콘텐츠에 집중할 수 있습니다.
-            </p>
-            <p>
-                이 효과는 시각적으로 매력적인 웹 경험을 제공하며, 방문자들의 관심을 끌기에 좋습니다.
-                스크롤 기반 애니메이션은 현대적인 웹사이트 디자인의 중요한 요소입니다.
-            </p>
-            <p>
-                필요에 따라 이 텍스트와 스타일을 자유롭게 수정하세요. 
-                배경 영상, 색상, 애니메이션 속도 등을 조정하여 원하는 분위기를 만들 수 있습니다.
-            </p>
-        </div>
+    <!-- 두 번째 비디오 섹션 -->
+    <section class="video-section" id="destinations">
+      <div class="video-container">
+        <div id="player2" class="video-bg"></div>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="content">
+        <h1 class="fade-in">M a l a y s i a</h1>
+        <p class="fade-in">다양한 인종과 다양한 종교가 어루어진 나라</p>
+        <!-- <a href="#" class="btn fade-in">투어 예약</a> -->
+      </div>
     </section>
 
-    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
-
-
-<!-- 밑에 스크롤을 내리면 계속 사라지는데......스크롤 때문인듯.? 고치기 -->
-    <section class="contact" id="contact">
-        <div class="section-content">
-            <h2 class="section-title">Contact Us</h2>
-            <p style="text-align: center; margin-bottom: 30px;">프로젝트에 대해 논의하거나 문의사항이 있으시면 언제든지 연락주세요.</p>
-            <div class="row" style="justify-content: center;">
-                <div class="col" style="text-align: center;">
-                    <h3>Email</h3>
-                    <p>contact@videography.com</p>
-                </div>
-                <div class="col" style="text-align: center;">
-                    <h3>Phone</h3>
-                    <p>+82 10 1234 5678</p>
-                </div>
-                <div class="col" style="text-align: center;">
-                    <h3>Address</h3>
-                    <p>서울특별시 강남구 테헤란로 123</p>
-                </div>
+    <!-- 목적지 섹션 -->
+    <section class="destination-section">
+      <div class="about-container">
+        <!-- 맛집 리스트 보여주는 곳 -->
+        <div class="restaurant-list">
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31869.953409819478!2d101.71287759305578!3d3.1619771657273956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37da2fb0b047%3A0x76f50482b321a0f9!2s1919%20Restaurant%20KL!5e0!3m2!1sko!2skr!4v1741529157274!5m2!1sko!2skr"
+          >
+            <div class="flag-icon china" title="중국국기">
+              <span class="material-icons">public</span>
             </div>
+            <p class="item-title">1919 Restaurant KL (2인 20000원~)</p>
+            <p>
+              두부가 엄청 맛있을 수가 있다!<br />
+              가지튀김은 별미
+            </p>
+          </div>
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1184.3920800697326!2d101.71085358630783!3d3.1463067513100227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37239bfe6dc9%3A0x9b6711d7f9c2d18b!2sKunafa%20Finger&#39;s%20branch%201!5e0!3m2!1sko!2skr!4v1741529463432!5m2!1sko!2skr"
+          >
+            <div class="flag-icon india" title="인도국기">
+              <span class="material-icons">public</span>
+            </div>
+            <p class="item-title">Kunafa Finger's (메뉴 1개 5000원~)</p>
+            <p>
+              중동은 디저트 맛집 나라인게 분명하다 <br />
+              메뉴에 없는 두바이 초콜릿 개추
+            </p>
+          </div>
+          <div
+            class="restaurant-item"
+            data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509931.14723782387!2d101.29373625625001!3d3.137694699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4931330bf621%3A0x21aac39e1d6f6f3c!2z67mM66as7KeAIO2MjO2BrCDroIjsiqTthqDrnpEgKOuCmOyLnOqzoOuerSDslYTrn4Qp!5e0!3m2!1sko!2skr!4v1741530181138!5m2!1sko!2skr"
+          >
+            <div class="flag-icon malay" title="말레이국기">
+              <span class="material-icons">public</span>
+            </div>
+            <p class="item-title">Village Park Restaurant(메뉴1개 4000원~)</p>
+            <p>
+              코코넛밀크로 지은 쌀밥과 <br />
+              KFC 저리가라 할 치킨의 환상조합
+            </p>
+          </div>
+          <!-- 여기에 더 많은 맛집 추가 가능 -->
         </div>
+        <div class="about-image fade-in">
+          <!-- 구글맵 -->
+          <iframe
+            id="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1908635042945!2d108.33747681486548!3d15.913417584774628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420df93e8556b3%3A0x17e4a797f6c0dd99!2z7IaM7JuQ7L2U7LaU!5e0!3m2!1sko!2skr!4v1709986237068!5m2!1sko!2skr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </section>
+
+    <!-- 마지막 섹션 -->
+    <section id="contact" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 class="fade-in about">문의하기</h2>
+          <p class="fade-in">여행 맛집이 궁금하면 언제든 물어보세요!</p>
+          <p class="fade-in">
+            이메일: cyeongb@naver.com <br />전화: 010-****-2983<br />주소:
+            경기도 용인시 기흥구 안알랴줌
+          </p>
+          <a href="#" class="btn fade-in email-send" value="cyeongb@naver.com"
+            >문의하기</a
+          >
+        </div>
+        <div class="about-video fade-in">
+          <!-- 비디오 재생 src="./video/jalanyalo.mp4" -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#home">home</a>
+          <a href="#about">vietnam</a>
+          <a href="#destinations">malaysia</a>
+          <a href="#contact">contact</a>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 모든 세계를 다 여행하는 그 날 까지. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
