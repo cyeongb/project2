@@ -419,40 +419,6 @@
         font-size: 14px;
       }
 
-      /* 맛집 이미지 스타일링 */
-        .restaurant-image {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-        text-align: center;
-        margin-top: 20px;
-        }
-
-      #restaurant-img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: none;
-        /* 클릭하면 display 되게끔 */
-        }
-
-        #restaurant-img img.active {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: block;
-        /* 클릭하면 display 되게끔 */
-        }
-
-        #image-placeholder {
-        color: #757575;
-        font-style: italic;
-        padding: 40px;
-        background-color: #f5f5f5;
-        border-radius: 8px;
-        }
-
       iframe {
         width: 100%;
         height: 100%;
@@ -465,19 +431,10 @@
           grid-template-columns: 1fr;
         }
 
-        .about-image,
-        .restaurant-list,
-        .restaurant-image {
-          grid-column: 1;
-        }
-
         .about-image {
           grid-row: 2;
         }
 
-        .restaurant-image {
-          grid-row: 3;
-        }
       }
     </style>
   </head>
@@ -551,15 +508,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="restaurant-image">
-          <!-- 이미지 표시 -->
-          <p id="image-placeholder">식당을 클릭하면 이미지가 표시됩니다</p>
-          <div id="restaurant-img" alt="Restaurant image" >
-            <img class="restaurant-img" src="./img/soulKitchen.png" alt=""> 
-            <img class="restaurant-img" src="./img/nostalife.png" alt="">
-            <img class="restaurant-img" src="./img/eggCoffee.png" alt="">
-            </div>
-        </div>
+        </div> 
       </div>
     </section>
 
@@ -578,33 +527,8 @@
 
     <!-- 목적지 섹션 -->
     <section id="destinations" class="destination-section">
-      <h2 class="section-title fade-in">인기 목적지</h2>
-      <div class="destination-grid">
-        <div class="destination-card fade-in">
-          <img src="/api/placeholder/400/500" alt="발리" />
-          <div class="destination-info">
-            <h3>발리, 인도네시아</h3>
-            <p>신비로운 사원과 아름다운 해변이 있는 곳</p>
-            <a href="#" class="btn">자세히 보기</a>
-          </div>
-        </div>
-        <div class="destination-card fade-in">
-          <img src="/api/placeholder/400/500" alt="파리" />
-          <div class="destination-info">
-            <h3>파리, 프랑스</h3>
-            <p>로맨틱한 도시의 아름다운 풍경과 문화</p>
-            <a href="#" class="btn">자세히 보기</a>
-          </div>
-        </div>
-        <div class="destination-card fade-in">
-          <img src="/api/placeholder/400/500" alt="교토" />
-          <div class="destination-info">
-            <h3>교토, 일본</h3>
-            <p>전통과 현대가 공존하는 아름다운 도시</p>
-            <a href="#" class="btn">자세히 보기</a>
-          </div>
-        </div>
-      </div>
+     
+      
     </section>
 
     <!-- 세 번째 비디오 섹션 -->
@@ -800,24 +724,18 @@
       // 맛집 리스트
       document.addEventListener("DOMContentLoaded", function () {
         const restaurantItems = document.querySelectorAll(".restaurant-item");
-        const restaurantImgItems = document.querySelectorAll(".restaurant-img");
-        
+        const restaurantImgItems = document.querySelectorAll(".restaurant-item");
         
         const mapFrame = document.getElementById("map-frame");
         const mapContainer = document.querySelector(".about-image");
 
         // 첫 번째 아이템을 기본으로 활성화
         restaurantItems[0].classList.add("active");
-        restaurantImgItems[0].classList.add("active");
 
         restaurantItems.forEach((item) => {
           item.addEventListener("click", function () {
             // 활성화된 아이템 스타일 변경
-            console.log(restaurantImgItems);
             restaurantItems.forEach((i) => i.classList.remove("active"));
-            this.classList.add("active");
-
-            restaurantImgItems.forEach((i) => i.classList.remove("active"));
             this.classList.add("active");
 
 
