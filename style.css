@@ -499,6 +499,15 @@
         body {
           font-size: 15px;
         }
+
+        header {
+          padding: 15px 30px;
+        }
+
+        .navigation {
+          gap: 20px;
+        }
+        
         
         .container ,.about-container {
           max-width: 768px;
@@ -533,6 +542,20 @@
       
       .container ,.about-container {
         padding: 0 15px;
+      }
+
+      header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+      }
+
+      .navigation {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left:-24px;
       }
       
       /* 모바일에서 네비게이션 수직 정렬 */
