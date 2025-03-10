@@ -250,16 +250,15 @@
         }
 
         // 이메일보내기
-        const emailBtn = document.querySelector(".email-send");
-        if (emailBtn) {
-          emailBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const emailAddress = this.getAttribute("value");
-            if (emailAddress) {
-              window.location.href = `mailto:${emailAddress}`;
-            }
-          });
-        }
+        const emailBtn = document.getElementById('naverEmailBtn');
+    
+        emailBtn.addEventListener('click', function(e) {
+          e.preventDefault(); // 기본 동작 방지
+          
+          // 네이버 메일 작성 페이지로 이동
+          window.location.href = 'https://mail.naver.com/write/popup?to=cyeongb@naver.com';
+        });
+    
 
         // 영상재생
         const videoContainer = document.querySelector(".about-video");
