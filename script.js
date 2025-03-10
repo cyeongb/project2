@@ -63,6 +63,7 @@
 
       // 4. 플레이어가 준비되면 자동 재생 설정
       function onPlayerReady(event) {
+      //  console.log("event.target::",event.target);
         event.target.playVideo();
         checkScroll(); // 초기 스크롤 위치에 따라 비디오 재생
       }
@@ -144,11 +145,11 @@
         const mapFrames = document.querySelectorAll("#map-frame");
 
         // 현재 페이지에 실제로 존재하는 iframe 개수 확인
-        console.log("발견된 iframe 개수:", mapFrames.length);
+      //  console.log("발견된 iframe 개수:", mapFrames.length);
 
         // iframe을 포함하는 컨테이너 (애니메이션용)
         const mapContainers = document.querySelectorAll(".about-image");
-        console.log("발견된 컨테이너 개수:", mapContainers.length);
+        //console.log("발견된 컨테이너 개수:", mapContainers.length);
 
         // 첫 번째 iframe이 존재하는지 확인
         const mapFrame1 = mapFrames.length > 0 ? mapFrames[0] : null;
@@ -204,7 +205,7 @@
               // 첫 번째 iframe이 존재할 때만 업데이트
               if (mapFrame1 && mapContainer1) {
                 updateMap(mapContainer1, mapFrame1, mapUrl);
-                console.log("첫 번째 iframe에 지도 URL 변경:", mapUrl);
+             //   console.log("첫 번째 iframe에 지도 URL 변경:", mapUrl);
               } else {
                 console.error(
                   "첫 번째 iframe 또는 컨테이너가 없어 지도를 업데이트할 수 없습니다."
@@ -214,14 +215,11 @@
               // 두 번째 iframe이 존재할 때만 업데이트
               if (mapFrame2 && mapContainer2) {
                 updateMap(mapContainer2, mapFrame2, mapUrl);
-                console.log("두 번째 iframe에 지도 URL 변경:", mapUrl);
+             //   console.log("두 번째 iframe에 지도 URL 변경:", mapUrl);
               } else if (mapFrame1 && mapContainer1) {
                 // 두 번째 iframe이 없으면 첫 번째에 표시
                 updateMap(mapContainer1, mapFrame1, mapUrl);
-                console.log(
-                  "두 번째 iframe이 없어 첫 번째에 지도 URL 변경:",
-                  mapUrl
-                );
+              //  console.log("두 번째 iframe이 없어 첫 번째에 지도 URL 변경:",mapUrl);
               } else {
                 console.error("iframe이 없어 지도를 업데이트할 수 없습니다.");
               }
@@ -236,6 +234,8 @@
             container.classList.remove("fade-in");
             container.classList.add("fade-out");
 
+        //    console.log("container.classList::",container.classList);
+
             // 애니메이션 후 지도 URL 변경
             setTimeout(() => {
               frame.src = url;
@@ -243,6 +243,8 @@
               // 페이드인 애니메이션 적용
               container.classList.remove("fade-out");
               container.classList.add("fade-in");
+
+           //   console.log("container.classList22::",container.classList);
             }, 300);
           } catch (error) {
             console.error("지도 업데이트 중 오류 발생:", error);

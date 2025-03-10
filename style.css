@@ -604,13 +604,3 @@
         font-size: 20px;
       }
     }
-    /* 기존에  */
-      /* @media (max-width: 768px) {
-        .about-container {
-          grid-template-columns: 1fr;
-        }
-
-        .about-image {
-          grid-row: 2;
-        }
-      } */
