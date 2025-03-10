@@ -333,10 +333,14 @@
         opacity: 0;
       }
 
-      .delayed-fade-in {
+      .delayed-fade-in{
         opacity: 0;
         animation: fadeIn 2s ease-in forwards 7s;
         /* 일부러 vietnam 자막보다 늦게 띄우려고 7초 함 */
+      }
+
+      .viet-content , .malay-content, .about-content{
+        color:#eddec5;
       }
 
       @keyframes fadeIn {
@@ -399,7 +403,7 @@
       }
 
       .restaurant-item.active {
-        background-color: #e3f2fd;
+        background-color: #fffbf4;
         border-left: 6px solid #5d7ef8;
       }
 
