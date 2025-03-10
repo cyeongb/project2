@@ -507,6 +507,17 @@
         .content-section ,.about-section {
           flex: 1 1 calc(50% - 20px);
         }
+
+        .about-text {
+          width: 70%;
+          padding: 0 15px;
+          margin-left:2rem;
+        }
+
+        .about-text p {
+          font-size: 16px;
+          line-height: 1.5;
+        }
         
         /* 태블릿에서 네비게이션 조정 */
         nav ul {
